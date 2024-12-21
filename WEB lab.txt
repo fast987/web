@@ -84,38 +84,38 @@
             font-size: 14px;
         }
         th {
-            background-color: #4CAF50; /* Header background color */
+            background-color: #4CAF50; 
             color: white;
         }
         td {
-        background-color: #f9f9f9; /* Light background for table cells */
+        background-color: #f9f9f9; 
         }
-        /* Styling for Lab Hours */
+        
         .lab {
-            background-color: #ffeb3b; /* Yellow for lab hours */
+            background-color: #ffeb3b; 
         }
-        /* Styling for NSS */
+        
         .nss {
-            background-color: #f44336; /* Red for NSS  */
+            background-color: #f44336; 
             color: white;
         }
-        /* Styling for RMI */
+        
         .rmi {
-            background-color: #2196F3; /* Blue for RMI */
+            background-color: #2196F3; 
             color: white;
         }
-        /* Styling for CN LAB */
+        
         .cn {
-            background-color: #2196F3; /* Blue for CN LAB */
+            background-color: #2196F3; 
             color: white;
         }
-        /* Break Styling */
+        
         .break {
-            background-color: #e0e0e0; /* Gray for break row */
+            background-color: #e0e0e0; 
             font-weight: bold;
         }
  
-        /* Footer and other text styling */
+        
         tfoot td {
             font-weight: bold;
         }
@@ -231,7 +231,7 @@ Lab session in yellow -->
 
 
 CSS Code:
-/* Style for h2 and h3 elements using type selector */
+
 h2 {
     color: #4CAF50;
     font-family: Arial, sans-serif;
@@ -242,38 +242,38 @@ h3 {    color:#007BFF;
     font-family:Verdana, sans-serif;    font-size:22px;
     margin-bottom:5px;
 }
-/* Styling hr element using type selector */
+
 hr {
     border:0;
     height:2px;
     background:#333;
 }
-/* Styling p element using class selector */
+
 p.text-style {
     font-size:16px;
     color:#333;
     line-height:1.6;
     text-align:justify;
-}/* Styling div with id selector */
+}
 #container {
     background-color:#f0f0f0;
     padding:20px;
     border:1px solid #ccc;
 }
-/* Styling span element using descendant selector */
+
 div span {    font-weight:bold;    color:#D2691E;
 }
-/* Styling time element using attribute selector */
+
 time[datetime] {
     font-style:italic;    color:#FF6347;
 }
-/* Styling img element using universal selector */
+
 img {    border: 5px solid #ddd;
     border-radius:10px;
     width:20%;
     height:auto;
 }
-/* Styling anchor tag using pseudo-class selector */
+
 a:link {
     color:#1E90FF;
     text-decoration:none;
@@ -871,17 +871,17 @@ margin-top: 20px;
 <div class="counter">
 <?php
 $counterFile = 'visitor_count.txt';
-// Read the current count
+
 if (file_exists($counterFile)) {
 $count = (int)file_get_contents($counterFile);
 } else {
 $count = 0;
 }
-// Increment the count
+
 $count++;
-// Save the new count
+
 file_put_contents($counterFile, $count);
-// Display the count
+
 echo "<h2>Visitor Count</h2>";
 echo "<p>You are visitor number: $count</p>";
 ?>
@@ -932,17 +932,17 @@ margin-top: 20px;
 <div class="counter">
 <?php
 $counterFile = 'visitor_count.txt';
-// Read the current count
+
 if (file_exists($counterFile)) {
 $count = (int)file_get_contents($counterFile);
 } else {
 $count = 0;
 }
-// Increment the count
+
 $count++;
-// Save the new count
+
 file_put_contents($counterFile, $count);
-// Display the count
+
 echo "<h2>Visitor Count</h2>";
 echo "<p>You are visitor number: $count</p>";
 ?>
@@ -1169,7 +1169,7 @@ _--------------------------------------------------------Program 10-------------
     </div>
 
     <script>
-        // Simulated data
+        
         const simulatedData = {
             text: "This is a sample text from a simulated server response.",
             json: {
@@ -1178,15 +1178,12 @@ _--------------------------------------------------------Program 10-------------
                 city: "New York"
             }
         };
-
-        // a. Ajax-like operation without jQuery
         function operationWithoutJQuery() {
             setTimeout(function() {
                 document.getElementById("result-a").textContent = simulatedData.text;
             }, 500);
         }
 
-        // b. Ajax-like operation with jQuery
         function operationWithJQuery() {
             $.Deferred(function(deferred) {
                 setTimeout(function() {
@@ -1197,7 +1194,7 @@ _--------------------------------------------------------Program 10-------------
             });
         }
 
-        // c. jQuery-like getJSON() method
+      
         function getJSONOperation() {
             $.Deferred(function(deferred) {
                 setTimeout(function() {
@@ -1208,7 +1205,7 @@ _--------------------------------------------------------Program 10-------------
             });
         }
 
-        // d. jQuery parseJSON() method
+     
         function parseJSONExample() {
             var jsonString = JSON.stringify(simulatedData.json);
             var jsonObject = $.parseJSON(jsonString);
